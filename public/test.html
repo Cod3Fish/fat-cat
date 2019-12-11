@@ -1,0 +1,83 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    background: grey;
+}
+.grid-nav {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: green;
+}
+.cat-container {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: purple;
+}
+.tiers {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background: yellow;
+}
+.selected-tiers {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    background: blue;
+}
+.tier-description {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 10;
+    background: white;
+}
+.sliders {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 13;
+    background: #806e09;
+}
+.search-button {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    background: white;
+}
+</style>
+
+<div class="grid">
+    <div class="grid-nav"></div>
+    <div class="cat-container"></div>
+    <div class="tiers">
+        <div class="tier">Loot Boxes</div>
+        <div class="tier">ADs</div>
+        <div class="tier">Timers</div>
+    </div>
+    <div class="selected-tiers">
+        <div class="selected-tier">Game Breaking</div>
+        <div class="selected-tier">Obsessive</div>
+        <div class="selected-tier">Energy</div>
+    </div>
+    <div class="tier-description">
+        contains weapons/items/consumables that are important to the game and take too long to earn in order to encourage the player to engage in microtransactions
+    </div>
+    <div class="sliders"></div>
+    <div class="search-button"></div>
+</div>
